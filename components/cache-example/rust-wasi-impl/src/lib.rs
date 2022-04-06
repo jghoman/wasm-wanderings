@@ -37,12 +37,12 @@ fn path(name: &str) -> Result<PathBuf, anyhow::Error> {
 // Error handling is currently not implemented.
 impl From<anyhow::Error> for Error {
     fn from(_: anyhow::Error) -> Self {
-        Self::RuntimeError
+        Self::Runtimeerror
     }
 }
 
 impl From<std::io::Error> for Error {
     fn from(_: std::io::Error) -> Self {
-        Self::RuntimeError
+        Self::Runtimeerror
     }
 }

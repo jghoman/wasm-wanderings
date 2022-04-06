@@ -2,4 +2,4 @@
 set -e # Bail early
 #set -x # Very verbose
 
-wit-bindgen rust-wqasm --export ../cache.wit
+wit-bindgen rust-wasm --export ../cache.wit

@@ -1,0 +1,16 @@
+[package]
+name = "rust-wasi-impl"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+  # cdylib = dynamic system library to be loaded from another language.
+  # Will create .so on linux, *.dylib on mac and *.dll on Windows
+  crate-type = [ "cdylib" ]
+  
+
+[dependencies]
+  wit-bindgen-rust = { git = "https://github.com/bytecodealliance/wit-bindgen", rev = "32e63116d469d8046727fae3c1333a7d35d0c5d3" }
+

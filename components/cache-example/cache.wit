@@ -1,8 +1,9 @@
 // cache.wit
 // Type for cache errors
 enum error {
-    runtime_error,
-    not_found_error,
+    // Apparently we can use neither caps nor underscores. What can we use?
+    runtimeerror,
+    notfounderror,
 }
 
 // payload for cache values
